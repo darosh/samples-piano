@@ -1,3 +1,10 @@
+# Audio
+ogg/
+audio/
+
+# IDE
+.idea
+
 # Logs
 logs
 *.log

@@ -1,0 +1,31 @@
+{
+  "name": "root",
+  "description": "Salamander Grand Piano V3 OGG samples",
+  "version": "1.0.0",
+  "author": {
+    "email": "ensonador@gmail.com",
+    "name": "Jan Forst",
+    "url": "https://github.com/darosh"
+  },
+  "bugs": "https://github.com/darosh/samples-piano/issues",
+  "devDependencies": {
+    "bytes": "^3.1.0",
+    "lerna": "^3.17.0"
+  },
+  "homepage": "https://github.com/darosh/samples-piano",
+  "keywords": [
+    "audio",
+    "ogg",
+    "piano",
+    "samples"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darosh/samples-piano.git"
+  },
+  "scripts": {
+    "build": "node build/index.js ogg"
+  }
+}
