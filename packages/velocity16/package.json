@@ -1,7 +1,7 @@
 {
   "name": "@samples/piano-velocity16",
   "description": "Salamander Grand Piano V3 OGG samples",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "email": "ensonador@gmail.com",
     "name": "Jan Forst",
@@ -23,6 +23,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "99f8871110daa2d2bffb8d77df86082dcea4707f"
+  }
 }

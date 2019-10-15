@@ -4,7 +4,7 @@ Salamander Grand Piano V3 OGG samples
 
 ## Usage
 
-`npm install @samples/piano-release` or CDN [https://unpkg.com/@samples/@samples/piano-release@1.0.0/audio/](https://unpkg.com/@samples/piano-release@1.0.0/audio/)
+`npm install @samples/piano-release` or CDN [https://unpkg.com/@samples/@samples/piano-release@1.0.2/audio/](https://unpkg.com/@samples/piano-release@1.0.2/audio/)
 
 ## Samples source
 
