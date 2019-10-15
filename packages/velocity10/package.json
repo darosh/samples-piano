@@ -20,5 +20,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/darosh/samples-piano.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

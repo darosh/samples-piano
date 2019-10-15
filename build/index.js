@@ -17,7 +17,7 @@ async function main () {
   const arrays = { release, harmonics, pedals, ...velocities }
   const sizes = Object.entries(arrays).map(async ([key, files]) => Promise.resolve(await writePackage(key, files)))
 
-  const readme = (await readFile('README.md', 'utf8')).split('\n').slice(0, 10).join('\n') + '\n' + (await Promise.all(sizes)).map(({name, size}) => `- \`${name}\` (${bytes(size)})`).join('\n')
+  const readme = (await readFile('README.md', 'utf8')).split('\n').slice(0, 10).join('\n') + '\n' + (await Promise.all(sizes)).map(({ name, size }) => `- \`${name}\` (${bytes(size)})`).join('\n')
   await writeFile('README.md', readme)
 }
 
@@ -39,7 +39,12 @@ async function writePackage (key, files) {
   const pkg = {
     ...package,
     name: `@samples/piano-${key}`,
+    publishConfig: {
+      access: 'public'
+    }
   }
+
+  delete pkg.private
 
   await writeFile(`${dir}/package.json`, JSON.stringify(pkg, null, 2))
 
@@ -78,7 +83,7 @@ ${files.map(f => `- ${f}`).join('\n')}`
 
   await writeFile(`${dir}/README.md`, readme)
 
-  return {size, name: pkg.name}
+  return { size, name: pkg.name }
 }
 
 function sortFiles (files) {
