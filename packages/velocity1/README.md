@@ -1,10 +1,10 @@
-# @samples/piano-velocity1
+# @audio-samples/piano-velocity1
 
 Salamander Grand Piano V3 OGG samples
 
 ## Usage
 
-`npm install @samples/piano-velocity1` or CDN [https://unpkg.com/@samples/@samples/piano-velocity1@1.0.2/audio/](https://unpkg.com/@samples/piano-velocity1@1.0.2/audio/)
+`npm install @audio-samples/piano-velocity1` or CDN [https://unpkg.com/@audio-samples/piano-velocity1@1.0.0/audio/](https://unpkg.com/@audio-samples/piano-velocity1@1.0.0/audio/)
 
 ## Samples source
 

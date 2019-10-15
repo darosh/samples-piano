@@ -1,7 +1,7 @@
 {
-  "name": "@samples/piano-harmonics",
+  "name": "@audio-samples/piano-harmonics",
   "description": "Salamander Grand Piano V3 OGG samples",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "author": {
     "email": "ensonador@gmail.com",
     "name": "Jan Forst",

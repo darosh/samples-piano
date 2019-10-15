@@ -1,10 +1,10 @@
-# @samples/piano-harmonics
+# @audio-samples/piano-harmonics
 
 Salamander Grand Piano V3 OGG samples
 
 ## Usage
 
-`npm install @samples/piano-harmonics` or CDN [https://unpkg.com/@samples/@samples/piano-harmonics@1.0.2/audio/](https://unpkg.com/@samples/piano-harmonics@1.0.2/audio/)
+`npm install @audio-samples/piano-harmonics` or CDN [https://unpkg.com/@audio-samples/piano-harmonics@1.0.0/audio/](https://unpkg.com/@audio-samples/piano-harmonics@1.0.0/audio/)
 
 ## Samples source
 

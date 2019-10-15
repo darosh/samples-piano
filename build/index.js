@@ -38,7 +38,7 @@ async function writePackage (key, files) {
 
   const pkg = {
     ...package,
-    name: `@samples/piano-${key}`,
+    name: `@audio-samples/piano-${key}`,
     publishConfig: {
       access: 'public'
     }
@@ -62,7 +62,7 @@ ${pkg.description}
 
 ## Usage
 
-\`npm install ${pkg.name}\` or CDN [https://unpkg.com/@samples/${pkg.name}@${pkg.version}/audio/](https://unpkg.com/${pkg.name}@${pkg.version}/audio/)
+\`npm install ${pkg.name}\` or CDN [https://unpkg.com/${pkg.name}@${pkg.version}/audio/](https://unpkg.com/${pkg.name}@${pkg.version}/audio/)
 
 ## Samples source
 
