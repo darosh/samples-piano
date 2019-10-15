@@ -42,10 +42,10 @@ function initialize () {
   piano._pedal._internalLoad = () => {
     return new Promise((success) => {
       this._buffers = new Tone.ToneAudioBuffers({
-        down1 : 'pedalD1.ogg',
-        down2 : 'pedalD2.ogg',
-        up1 : 'pedalU1.ogg',
-        up2 : 'pedalU2.ogg',
+        down1: 'pedalD1.ogg',
+        down2: 'pedalD2.ogg',
+        up1: 'pedalU1.ogg',
+        up2: 'pedalU2.ogg',
       }, success, piano._pedal.samples)
     })
   }
