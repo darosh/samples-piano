@@ -17,7 +17,7 @@ async function main () {
   const arrays = { release, harmonics, pedals, ...velocities }
   const sizes = Object.entries(arrays).map(async ([key, files]) => Promise.resolve(await writePackage(key, files)))
 
-  const readme = (await readFile('README.md', 'utf8')).split('\n').slice(0, 14).join('\n') + '\n' + (await Promise.all(sizes)).map(({ name, size }) => `- \`${name}\` (${bytes(size)})`).join('\n')
+  const readme = (await readFile('README.md', 'utf8')).split('\n').slice(0, 14).join('\n') + '\n' + (await Promise.all(sizes)).map(({ name, size }) => `- [\`${name}\`](https://www.npmjs.com/package/${name}) (${bytes(size)})`).join('\n')
   await writeFile('README.md', readme)
 }
 
