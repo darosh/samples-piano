@@ -1,7 +1,7 @@
 {
   "name": "root",
   "description": "Salamander Grand Piano V3 OGG samples",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "author": {
     "email": "ensonador@gmail.com",
@@ -11,7 +11,7 @@
   "bugs": "https://github.com/darosh/samples-piano/issues",
   "devDependencies": {
     "bytes": "^3.1.0",
-    "lerna": "^3.17.0"
+    "lerna": "^3.20.2"
   },
   "homepage": "https://github.com/darosh/samples-piano",
   "keywords": [
@@ -27,6 +27,7 @@
     "url": "https://github.com/darosh/samples-piano.git"
   },
   "scripts": {
-    "build": "node build/index.js ogg"
+    "build": "node build/index.js ogg",
+    "publish": "lerna publish"
   }
 }

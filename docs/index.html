@@ -8,22 +8,32 @@
   <title>Piano samples CDN test</title>
 </head>
 <body>
-<button onclick="load()">Test</button>
+<button onclick="load()" id="test-btn">Test</button>
 <script src="https://unpkg.com/tone@14.1.18/build/Tone.js"></script>
 <script src="https://unpkg.com/@tonejs/piano@0.1.1/build/Piano.js"></script>
 <script>
 let piano
 
 function load () {
+  const btn = document.getElementById('test-btn')
+
+  btn.innerText = 'Loading...'
+  btn.disabled = true
+
   piano = piano || initialize()
 
-  piano.load().then(() => {
-    piano.keyDown('C4', '+0')
-    piano.keyDown('E4', '+0')
-    piano.keyDown('G4', '+0')
-    piano.keyUp('C4', '+1')
-    piano.keyUp('E4', '+1')
-    piano.keyUp('G4', '+1')
+  piano.load()
+    .then(() => {
+      piano.keyDown('C4', '+0')
+      piano.keyDown('E4', '+0')
+      piano.keyDown('G4', '+0')
+      piano.keyUp('C4', '+1')
+      piano.keyUp('E4', '+1')
+      piano.keyUp('G4', '+1')
+    })
+  .finally(() => {
+    btn.innerText = 'Test'
+    btn.disabled = false
   })
 }
 

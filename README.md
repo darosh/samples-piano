@@ -6,11 +6,11 @@ Salamander Grand Piano V3 OGG samples
 
 `npm install @audio-samples/piano-pedals` or CDN [https://unpkg.com/@audio-samples/piano-pedals@1.0.3/audio/](https://unpkg.com/@audio-samples/piano-pedals@1.0.3/audio/)
 
+Note: the hash/sharp sign (#) needs to be escaped (%23) when used in URL. See also [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
+
 ## Demo
 
 - simple CDN test with @tonejs/piano [darosh.github.io/samples-piano/](https://darosh.github.io/samples-piano/)
-
-## Packages
 
 - [`@audio-samples/piano-release`](https://www.npmjs.com/package/@audio-samples/piano-release) (918.65KB)
 - [`@audio-samples/piano-harmonics`](https://www.npmjs.com/package/@audio-samples/piano-harmonics) (1.64MB)

@@ -4,7 +4,9 @@ Salamander Grand Piano V3 OGG samples
 
 ## Usage
 
-`npm install @audio-samples/piano-velocity9` or CDN [https://unpkg.com/@audio-samples/piano-velocity9@1.0.3/audio/](https://unpkg.com/@audio-samples/piano-velocity9@1.0.3/audio/)
+`npm install @audio-samples/piano-velocity9` or CDN [https://unpkg.com/@audio-samples/piano-velocity9@1.0.4/audio/](https://unpkg.com/@audio-samples/piano-velocity9@1.0.4/audio/)
+
+Note: the hash/sharp sign (#) needs to be escaped (%23) when used in URL. See also [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
 
 ## Samples source
 

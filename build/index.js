@@ -46,7 +46,7 @@ async function writePackage (key, files) {
 
   delete pkg.private
 
-  await writeFile(`${dir}/package.json`, JSON.stringify(pkg, null, 2))
+  await writeFile(`${dir}/package.json`, JSON.stringify(pkg, null, 2) + '\n')
 
   files.forEach(file => copyFile(`${source}/${file}`, `${dir}/audio/${file}`))
 
@@ -63,6 +63,8 @@ ${pkg.description}
 ## Usage
 
 \`npm install ${pkg.name}\` or CDN [https://unpkg.com/${pkg.name}@${pkg.version}/audio/](https://unpkg.com/${pkg.name}@${pkg.version}/audio/)
+
+Note: the hash/sharp sign (#) needs to be escaped (%23) when used in URL. See also [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
 
 ## Samples source
 
